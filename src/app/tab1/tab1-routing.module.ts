@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Tab1Page } from './tab1.page';
+import { ListSongsModule } from '../components/list-songs/list-songs.module';
+import { ListSongsComponent } from '../components/list-songs/list-songs.component';
 
 const routes: Routes = [
   {
@@ -10,7 +12,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes), ListSongsModule],
   exports: [RouterModule]
 })
 export class Tab1PageRoutingModule {}
