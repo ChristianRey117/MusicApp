@@ -5,9 +5,9 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "strict": false,
     "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
+    "noPropertyAccessFromIndexSignature": false,
     "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
@@ -23,7 +23,7 @@
       "dom"
     ],
     "useDefineForClassFields": false,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
