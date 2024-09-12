@@ -1,19 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      List Music
-    </ion-title>
+    <ion-title> List Music </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-row>
+  <ion-row style="margin: 0px 20px">
     <ion-col [size]="12">
       <h2>Songs</h2>
     </ion-col>
   </ion-row>
 
-  <app-list-songs></app-list-songs>
-  
-
+  <app-list-songs [listOfSongs]="listSongs"></app-list-songs>
 </ion-content>

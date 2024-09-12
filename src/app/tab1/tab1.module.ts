@@ -15,8 +15,8 @@ import { ListSongsModule } from '../components/list-songs/list-songs.module';
     FormsModule,
     ExploreContainerComponentModule,
     ListSongsModule,
-    Tab1PageRoutingModule
+    Tab1PageRoutingModule,
   ],
-  declarations: [Tab1Page]
+  declarations: [Tab1Page],
 })
 export class Tab1PageModule {}
