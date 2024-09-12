@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ISong } from 'src/app/interfaces/list-songs.interface';
 
 @Component({
@@ -8,7 +9,11 @@ import { ISong } from 'src/app/interfaces/list-songs.interface';
 })
 export class SongComponent implements OnInit {
   @Input() song: ISong;
-  constructor() {}
+  constructor(private readonly _router:Router) {}
 
   ngOnInit() {}
+
+  selectSong(id:number):void{
+    this._router.navigate(["/song-selected/" +id.toString()])
+  }
 }
