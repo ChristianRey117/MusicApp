@@ -13,7 +13,12 @@ export class SongComponent implements OnInit {
 
   ngOnInit() {}
 
-  selectSong(id:number):void{
-    this._router.navigate(["/song-selected/" +id.toString()])
+  selectSong(song:ISong):void{
+    this._router.navigate(["/song-selected/" +song.id.toString()], {
+      replaceUrl:true,
+      state: {
+        song: song
+      }
+    })
   }
 }

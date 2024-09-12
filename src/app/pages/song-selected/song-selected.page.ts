@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-song-selected',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./song-selected.page.scss'],
 })
 export class SongSelectedPage implements OnInit {
-
-  constructor() { }
+  songInfo = this._router.getCurrentNavigation()?.extras.state.song;
+  constructor(private readonly _router:Router) { }
 
   ngOnInit() {
+    console.log("SONG INFO--->", this.songInfo)
   }
 
 }
